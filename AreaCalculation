@@ -1,0 +1,36 @@
+* Circle
+  - input: 
+    - pi = 3.14
+    - r = input
+    - a = ?
+    
+  - process:
+    - A = pi * r ^ 2
+    
+  - output: 
+    - print A
+    
+* Triangle
+  - input: 
+    - h: input
+    - b (base): input
+    - a = ?
+    
+  - process:
+    a = h * b / 2
+   
+  - output: 
+    print a
+    
+* Rectangle
+  - input:
+    - w (width): input
+    - l (length): input
+  
+  - process:
+    a = w * l
+  
+  - output:
+    - print a
+  
+    
