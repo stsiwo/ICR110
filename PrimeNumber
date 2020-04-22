@@ -1,0 +1,44 @@
+algorithm to print the first 100 Prime number
+
+preconditions:
+  - no negative
+  - 1 is not prime number
+  - 2 is the smallest prime number
+  - if a number is divided by divisor (no remainder), the number is not prime number
+  
+ variables
+  - number
+  - divisor
+  - remainder
+  
+ initialize:
+  - number = 1
+  - divisor = 2
+  - counter = 0 // to count total 100 
+  
+ input : N/A
+ 
+ process
+ 
+  while (counter < 100):
+    if (numner > 1):
+      if (number == 2):
+        print number
+        increment counter (counter++)
+      else:
+        for loop from divisor to number (divisor <= i < number)
+          if (n % i == 0)
+            break; // stop and go next number
+          if ((n-1) == 1):
+            print number
+            increment counter (counter++)
+            
+        
+        
+ 
+  
+  
+  
+  
+  
+  
