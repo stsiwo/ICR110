@@ -20,20 +20,27 @@ preconditions:
  
  process
  
-  while (counter < 100):
-    if (numner > 1):
-      if (number == 2):
+  while (counter < 100): -- (1)
+    if (numner > 1): -- (2)
+      if (number == 2): -- (3)
         print number
         increment counter (counter++)
-      else:
-        for loop from divisor to number (divisor <= i < number)
-          if (n % i == 0)
+      else: -- (4)
+        for loop from divisor to number (divisor <= i < number) -- (5)
+          if (n % i == 0) -- (6)
             break; // stop and go next number
-          if ((n-1) == 1):
+          if ((n-i) == 1): -- (7)
             print number
             increment counter (counter++)
+    number++ --(8)
             
-        
+ testing:
+  number = 1 =>  go to (8) => not prime number
+  number = 2 =>  (2) -> (3) => prime number
+  number = 3 => (4) -> (5) with i = 2 -> (7) => prime number
+  number = 4 => (4) -> (5) with i = 2 -> (6) => not prime number
+  number = 5 => (4) -> (5) with i = 2 -> (5) with i = 3 -> (5) with i = 4 -> (7) => prime number
+  number = 6 => (4) -> (5) with i = 2 -> (5) with i = 3 -> (5) with i = 4 -> (5) with i = 4 -> (7) => prime number
         
  
   
