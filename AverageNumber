@@ -1,0 +1,11 @@
+input:
+  - n1: input
+  - n2: input
+  - n3: input
+  - a: ?
+  
+process:
+  a = (n1 + n2 + n3) / 3
+  
+output:
+  print a
